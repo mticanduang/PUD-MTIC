@@ -18,7 +18,7 @@ class CreateMtiJadwalTable extends Migration
             'token' => ['type' => 'VARCHAR', 'constraint' => 20],
             'status_publish_nilai' => ['type' => 'TINYINT', 'constraint' => 1, 'default' => 0],
             'status_ujian' => ['type' => 'ENUM', 'constraint' => ['draft', 'aktif', 'selesai'], 'default' => 'draft'],
-            'created_at' => ['type' => 'DATETIME', 'default' => 'CURRENT_TIMESTAMP'],
+            'created_at' => ['type' => 'DATETIME', 'null' => true],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('mapel_id', 'mti_mapel', 'id', 'CASCADE', 'CASCADE');

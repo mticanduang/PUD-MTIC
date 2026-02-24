@@ -16,7 +16,7 @@ class CreateMtiUsersTable extends Migration
             'kelas' => ['type' => 'VARCHAR', 'constraint' => 20, 'null' => true],
             'role' => ['type' => 'ENUM', 'constraint' => ['admin', 'santri'], 'default' => 'santri'],
             'is_active' => ['type' => 'TINYINT', 'constraint' => 1, 'default' => 1],
-            'created_at' => ['type' => 'DATETIME', 'default' => 'CURRENT_TIMESTAMP'],
+            'created_at' => ['type' => 'DATETIME', 'null' => true],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->createTable('mti_users');

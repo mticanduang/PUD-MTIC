@@ -12,7 +12,7 @@ class CreateMtiMapelTable extends Migration
             'id' => ['type' => 'INT', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
             'nama_mapel' => ['type' => 'VARCHAR', 'constraint' => 100],
             'ustadz_pengampu' => ['type' => 'VARCHAR', 'constraint' => 100, 'null' => true],
-            'created_at' => ['type' => 'DATETIME', 'default' => 'CURRENT_TIMESTAMP'],
+            'created_at' => ['type' => 'DATETIME', 'null' => true],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->createTable('mti_mapel');

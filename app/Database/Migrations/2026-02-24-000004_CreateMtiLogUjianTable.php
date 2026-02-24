@@ -18,7 +18,7 @@ class CreateMtiLogUjianTable extends Migration
             'jumlah_pelanggaran' => ['type' => 'INT', 'constraint' => 11, 'default' => 0],
             'is_submit' => ['type' => 'TINYINT', 'constraint' => 1, 'default' => 0],
             'status' => ['type' => 'ENUM', 'constraint' => ['waiting', 'mengerjakan', 'selesai'], 'default' => 'waiting'],
-            'created_at' => ['type' => 'DATETIME', 'default' => 'CURRENT_TIMESTAMP'],
+            'created_at' => ['type' => 'DATETIME', 'null' => true],
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('user_id', 'mti_users', 'id', 'CASCADE', 'CASCADE');
