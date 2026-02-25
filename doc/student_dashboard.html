@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#066048",
+                        "background-light": "#f5f8f7",
+                        "background-dark": "#10221d",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 bg-white dark:bg-slate-900 px-6 md:px-20 py-4 sticky top-0 z-50 shadow-sm">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 bg-primary text-white flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-[-0.015em]">PUD-MTIC</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4 md:gap-8">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-primary text-sm font-semibold border-b-2 border-primary pb-1" href="#">Portal Ujian</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Jadwal</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Nilai</a>
+</nav>
+<div class="h-8 w-px bg-slate-200 dark:bg-slate-700 hidden md:block"></div>
+<div class="flex items-center gap-3">
+<div class="text-right hidden sm:block">
+<p class="text-slate-900 dark:text-slate-100 text-sm font-bold">Ahmad Fauzi</p>
+<p class="text-primary text-xs font-medium">Kelas 12 MA</p>
+</div>
+<div class="relative">
+<div class="bg-slate-200 dark:bg-slate-700 bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="Student profile photo of Ahmad Fauzi" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp_C03-6aNeaWzzx89r24KAcXDVfiyaOYP6CzHw1jv8uGCM5EBzQaDor7TubcHBKJFixOikD0w9Rdjh6f7a4hU3dFtGRQZDRal5zic9vwCC2ggo3e-sN4sFaXJ_diQX3JpI_5BPA7QPVCbdN0K-WbIgdQKwmLYs2j9_ImTWFgLQ1XBuuIGlPIT8iKi44gzy-TeG4Q5tK7FTdIGsPclux_jDBk29mTN9al3yaOoud3AVzcw8_QkGN_orv1tnHOKd4sC6zlADdWb-H0");'>
+</div>
+<div class="absolute bottom-0 right-0 size-3 bg-emerald-500 border-2 border-white dark:border-slate-900 rounded-full"></div>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto w-full px-6 py-8 md:py-12">
+<!-- Hero Section -->
+<section class="relative overflow-hidden rounded-xl bg-primary p-8 md:p-12 mb-10 shadow-lg shadow-primary/20">
+<div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-medium mb-4">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+</span>
+                            Online • Sesi Aktif
+                        </div>
+<h1 class="text-white text-3xl md:text-5xl font-black leading-tight tracking-tight mb-2">
+                            Halo, Ahmad Fauzi
+                        </h1>
+<p class="text-emerald-50/80 text-lg md:text-xl font-medium">
+                            Selamat datang di Portal Ujian Digital Kelas 12 MA.
+                        </p>
+</div>
+<div class="hidden lg:block">
+<div class="size-48 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+<span class="material-symbols-outlined text-white text-7xl">school</span>
+</div>
+</div>
+</div>
+<!-- Abstract Background Patterns -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-64 h-64 bg-emerald-900/30 rounded-full blur-2xl"></div>
+</section>
+<!-- Section Ujian -->
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-slate-900 dark:text-slate-100 text-xl md:text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">event_note</span>
+                    UJIAN HARI INI
+                </h2>
+<span class="text-sm font-medium text-slate-500 dark:text-slate-400">Senin, 24 Mei 2024</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Card 1: Sedang Berlangsung -->
+<div class="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-slate-100 dark:border-slate-800 flex flex-col">
+<div class="h-3 bg-primary"></div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-1">
+<span class="text-primary text-xs font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="size-2 bg-emerald-500 rounded-full animate-pulse"></span>
+                                    Sedang Berlangsung
+                                </span>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mt-1 group-hover:text-primary transition-colors">
+                                    Fiqih (Kitab Fathul Mu'in)
+                                </h3>
+</div>
+<div class="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 text-primary">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+</div>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-sm font-medium">08:00 - 10:00 (120 Menit)</span>
+</div>
+<div class="flex items-center gap-3 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span class="text-sm font-medium">Status: Aktif</span>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full flex items-center justify-center gap-2 bg-primary hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg transition-all transform active:scale-95 shadow-lg shadow-primary/20">
+<span class="truncate">MULAI UJIAN</span>
+<span class="material-symbols-outlined text-sm">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Belum Dimulai -->
+<div class="group bg-slate-50 dark:bg-slate-800/50 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-700 flex flex-col">
+<div class="h-3 bg-slate-300 dark:bg-slate-600"></div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col gap-1 text-slate-400">
+<span class="text-xs font-bold uppercase tracking-wider">Belum Dimulai</span>
+<h3 class="text-slate-500 dark:text-slate-400 text-xl font-bold mt-1">
+                                    Bahasa Arab
+                                </h3>
+</div>
+<div class="p-3 rounded-lg bg-slate-200 dark:bg-slate-700 text-slate-400">
+<span class="material-symbols-outlined">language</span>
+</div>
+</div>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3 text-slate-400">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-sm font-medium">10:30 - 12:00 (90 Menit)</span>
+</div>
+<div class="flex items-center gap-3 text-slate-400">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-sm font-medium">Status: Terkunci</span>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full flex items-center justify-center gap-2 bg-slate-200 dark:bg-slate-700 text-slate-400 font-bold py-3 px-6 rounded-lg cursor-not-allowed" disabled="">
+<span class="truncate">MULAI</span>
+<span class="material-symbols-outlined text-sm">lock</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Stats/Information Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg shadow-sm border border-slate-100 dark:border-slate-800 flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">assignment_turned_in</span>
+</div>
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium">Selesai</p>
+<p class="text-slate-900 dark:text-slate-100 font-bold">12 Mata Pelajaran</p>
+</div>
+</div>
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg shadow-sm border border-slate-100 dark:border-slate-800 flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">star</span>
+</div>
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium">Rata-rata Nilai</p>
+<p class="text-slate-900 dark:text-slate-100 font-bold">88.5</p>
+</div>
+</div>
+<div class="p-4 bg-white dark:bg-slate-900 rounded-lg shadow-sm border border-slate-100 dark:border-slate-800 flex items-center gap-4">
+<div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium">Pengumuman</p>
+<p class="text-slate-900 dark:text-slate-100 font-bold">3 Pesan Baru</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-6 py-8">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-2 opacity-60">
+<span class="material-symbols-outlined text-primary scale-75">verified_user</span>
+<span class="text-sm font-medium">PUD-MTIC © 2024 Exam Portal. All rights reserved.</span>
+</div>
+<div class="flex gap-6 text-sm font-medium text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">Bantuan</a>
+<a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a>
+<a class="hover:text-primary transition-colors" href="#">Panduan Siswa</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #066048;
+  --color-emerald-dark: #064e3b;
+  --color-gold-accent: #d4af37;
+  --color-background-light: #f5f8f7;
+  --color-background-dark: #10221d;
+
+  /* Fonts */
+  --font-display: "Lexend", sans-serif;
+
+  /* Border Radius */
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+}
+
+/* Setup Dark Mode Selector (Jika menggunakan darkMode: "class") */
+@custom-variant dark (&:where(.dark, .dark *));
